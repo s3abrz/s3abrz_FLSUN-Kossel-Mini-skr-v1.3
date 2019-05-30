@@ -41,7 +41,7 @@
 //
 #define X_MIN_PIN          P1_29
 #define X_MAX_PIN          P1_28
-#define Y_MIN_PIN          P1_27
+//#define Y_MIN_PIN          P1_27
 #define Y_MAX_PIN          P1_26
 #define Z_MIN_PIN          P1_25
 #define Z_MAX_PIN          P1_24
@@ -50,14 +50,14 @@
 // Z Probe (when not Z_MIN_PIN)
 //
 #ifndef Z_MIN_PROBE_PIN
-  #define Z_MIN_PROBE_PIN  P1_24
+  #define Z_MIN_PROBE_PIN  P1_25
 #endif
 
 //
 // Filament Runout Sensor
 //
 #ifndef FIL_RUNOUT_PIN
-  #define FIL_RUNOUT_PIN   P1_28
+  #define FIL_RUNOUT_PIN   P1_27
 #endif
 
 //
