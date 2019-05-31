@@ -634,7 +634,7 @@
   #define DELTA_DIAGONAL_ROD 218.0        // (mm)
 
   // Distance between bed and nozzle Z home position
-  #define DELTA_HEIGHT 310.00             // (mm) Get this value from G33 auto calibrate
+  #define DELTA_HEIGHT 312.00             // (mm) Get this value from G33 auto calibrate
 
   #define DELTA_ENDSTOP_ADJ { 0.0, 0.0, 0.0 } // Get these values from G33 auto calibrate
 
@@ -669,7 +669,7 @@
 #define USE_ZMAX_PLUG
 
 // Enable pullup for all endstops to prevent a floating state
-//#define ENDSTOPPULLUPS
+#define ENDSTOPPULLUPS
 #if DISABLED(ENDSTOPPULLUPS)
   // Disable ENDSTOPPULLUPS to set pullups individually
   //#define ENDSTOPPULLUP_XMAX
@@ -734,7 +734,7 @@
 
 // Enable this feature if all enabled endstop pins are interrupt-capable.
 // This will remove the need to poll the interrupt pins, saving many CPU cycles.
-//#define ENDSTOP_INTERRUPTS_FEATURE
+#define ENDSTOP_INTERRUPTS_FEATURE
 
 /**
  * Endstop Noise Threshold
@@ -778,13 +778,13 @@
  */
 // variables to calculate steps
 #define XYZ_FULL_STEPS_PER_ROTATION 200
-#define XYZ_MICROSTEPS 32
+#define XYZ_MICROSTEPS 64
 #define XYZ_BELT_PITCH 2
 #define XYZ_PULLEY_TEETH 16
 
 // delta speeds must be the same on xyz
 #define DEFAULT_XYZ_STEPS_PER_UNIT ((XYZ_FULL_STEPS_PER_ROTATION) * (XYZ_MICROSTEPS) / double(XYZ_BELT_PITCH) / double(XYZ_PULLEY_TEETH))
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { DEFAULT_XYZ_STEPS_PER_UNIT, DEFAULT_XYZ_STEPS_PER_UNIT, DEFAULT_XYZ_STEPS_PER_UNIT, 200 }  // default steps per unit for Kossel (GT2, 20 tooth)
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { DEFAULT_XYZ_STEPS_PER_UNIT, DEFAULT_XYZ_STEPS_PER_UNIT, DEFAULT_XYZ_STEPS_PER_UNIT, 400 }  // default steps per unit for Kossel (GT2, 20 tooth)
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -900,7 +900,7 @@
  * A Fix-Mounted Probe either doesn't deploy or needs manual deployment.
  *   (e.g., an inductive probe or a nozzle-based probe-switch.)
  */
-#define FIX_MOUNTED_PROBE
+//#define FIX_MOUNTED_PROBE
 
 /**
  * Z Servo Probe, such as an endstop switch on a rotating arm.
