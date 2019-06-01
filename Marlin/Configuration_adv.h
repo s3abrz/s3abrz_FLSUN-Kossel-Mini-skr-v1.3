@@ -692,7 +692,7 @@
  * vibration and surface artifacts. The algorithm adapts to provide the best possible step smoothing at the
  * lowest stepping frequencies.
  */
-//#define ADAPTIVE_STEP_SMOOTHING
+#define ADAPTIVE_STEP_SMOOTHING
 
 /**
  * Custom Microstepping
@@ -703,7 +703,7 @@
 //#define MICROSTEP4 LOW,HIGH,LOW
 //#define MICROSTEP8 HIGH,HIGH,LOW
 //#define MICROSTEP16 LOW,LOW,HIGH
-//#define MICROSTEP32 HIGH,LOW,HIGH
+#define MICROSTEP32 HIGH,LOW,HIGH
 
 // Microstep setting (Only functional when stepper driver microstep pins are connected to MCU.
 #define MICROSTEP_MODES { 16, 16, 16, 16, 16, 16 } // [1,2,4,8,16]
@@ -1203,7 +1203,7 @@
  *
  * Override the default value based on the driver type set in Configuration.h.
  */
-//#define MINIMUM_STEPPER_DIR_DELAY 650
+#define MINIMUM_STEPPER_DIR_DELAY 500
 
 /**
  * Minimum stepper driver pulse width (in µs)
@@ -1216,7 +1216,7 @@
  *
  * Override the default value based on the driver type set in Configuration.h.
  */
-//#define MINIMUM_STEPPER_PULSE 2
+#define MINIMUM_STEPPER_PULSE 0
 
 /**
  * Maximum stepping rate (in Hz) the stepper driver allows
@@ -1230,7 +1230,7 @@
  *
  * Override the default value based on the driver type set in Configuration.h.
  */
-//#define MAXIMUM_STEPPER_RATE 250000
+#define MAXIMUM_STEPPER_RATE 200000
 
 // @section temperature
 
