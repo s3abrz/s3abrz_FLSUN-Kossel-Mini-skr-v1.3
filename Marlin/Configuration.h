@@ -622,7 +622,7 @@
 
   #if EITHER(DELTA_AUTO_CALIBRATION, DELTA_CALIBRATION_MENU)
     // Set the radius for the calibration probe points - max DELTA_PRINTABLE_RADIUS for non-eccentric probes
-    #define DELTA_CALIBRATION_RADIUS 73.5 // (mm)
+    #define DELTA_CALIBRATION_RADIUS 70 // (mm)
     // Set the steprate for papertest probing
     #define PROBE_MANUALLY_STEP 0.025     // (mm)
   #endif
@@ -634,7 +634,7 @@
   #define DELTA_DIAGONAL_ROD 218.0        // (mm)
 
   // Distance between bed and nozzle Z home position
-  #define DELTA_HEIGHT 312.00             // (mm) Get this value from G33 auto calibrate
+  #define DELTA_HEIGHT 315.00             // (mm) Get this value from G33 auto calibrate
 
   #define DELTA_ENDSTOP_ADJ { 0.0, 0.0, 0.0 } // Get these values from G33 auto calibrate
 
@@ -1064,7 +1064,7 @@
  */
 #define X_PROBE_OFFSET_FROM_EXTRUDER 0     // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER 0     // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -0.10  // Z offset: -below +above  [the nozzle]//для пленочного датчика
+#define Z_PROBE_OFFSET_FROM_EXTRUDER 0  // Z offset: -below +above  [the nozzle]//для пленочного датчика
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 5
