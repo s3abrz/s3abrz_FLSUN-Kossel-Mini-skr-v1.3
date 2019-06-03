@@ -79,13 +79,12 @@ While we can't prevent the use of this code in products (3D printers, CNC, etc.)
 
 ## Some words about FLSun Kossel Mini & rj-45 wiring
 
-- Endstops/extruder cable:
+Endstops/extruder cable:
 - 4 pins for extruder stepper
 - 3 pins for each microswitch
 - 1 pin for microswitches ground
 
-- Hotend cable:
-
+Hotend cable:
 - 2 pins for thermistor
 - 2 pins for 12V (take from wherever you want)
 - 2 pins for hotend GND (pin 10 on RAMPS)
