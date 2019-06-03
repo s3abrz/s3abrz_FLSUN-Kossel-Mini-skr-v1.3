@@ -154,8 +154,8 @@
 //  3.3V max when defined as an analog input
 //
 #define TEMP_BED_PIN       0   // A0 (T0) - (67) - TEMP_BED_PIN
-#define TEMP_0_PIN         1   // A1 (T1) - (68) - TEMP_0_PIN
-#define TEMP_1_PIN         2   // A2 (T2) - (69) - TEMP_1_PIN
+#define TEMP_0_PIN         2   // A1 (T1) - (68) - TEMP_0_PIN
+//#define TEMP_1_PIN         1   // A2 (T2) - (69) - TEMP_1_PIN
 
 //
 // Heaters / Fans
