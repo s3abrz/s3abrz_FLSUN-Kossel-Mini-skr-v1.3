@@ -1,4 +1,4 @@
-# Marlin 3D Printer Firmware
+# Marlin 3D Printer Firmware modified for FLSun Kossel Mini & BIGTREETECH SKR V1.3
 
 [![Build Status](https://travis-ci.org/MarlinFirmware/Marlin.svg?branch=bugfix-2.0.x)](https://travis-ci.org/MarlinFirmware/Marlin)
 ![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)
@@ -75,3 +75,20 @@ The current Marlin dev team consists of:
 Marlin is published under the [GPL license](/LICENSE) because we believe in open development. The GPL comes with both rights and obligations. Whether you use Marlin firmware as the driver for your open or closed-source product, you must keep Marlin open, and you must provide your compatible Marlin source code to end users upon request. The most straightforward way to comply with the Marlin license is to make a fork of Marlin on Github, perform your modifications, and direct users to your modified fork.
 
 While we can't prevent the use of this code in products (3D printers, CNC, etc.) that are closed source or crippled by a patent, we would prefer that you choose another firmware or, better yet, make your own.
+
+## Some words about FLSun Kossel Mini & rj-45 wiring
+
+- Endstops/extruder cable:
+- 4 pins for extruder stepper
+- 3 pins for each microswitch
+- 1 pin for microswitches ground
+
+- Hotend cable:
+
+- 2 pins for thermistor
+- 2 pins for 12V (take from wherever you want)
+- 2 pins for hotend GND (pin 10 on RAMPS)
+- 1 pin for fans GND (pin 9 on RAMPS)
+- 1 pin for LEDs GND (circuit using pin 4 to switch N MOSFET to ground)
+
+Do not connect together grounds, the RAMPS board (and any other boards I've seen) uses N-channel MOSFETs which switch the ground side, not the high-end (power) side. You can connect together all the power lines and have a separate ground for everything.
