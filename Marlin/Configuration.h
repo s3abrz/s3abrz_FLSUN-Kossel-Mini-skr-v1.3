@@ -431,7 +431,7 @@
 #define HEATER_3_MAXTEMP 250
 #define HEATER_4_MAXTEMP 250
 #define HEATER_5_MAXTEMP 250
-#define BED_MAXTEMP      115
+//#define BED_MAXTEMP      115
 
 //===========================================================================
 //============================= PID Settings ================================
@@ -1593,7 +1593,7 @@
 // Preheat Constants
 #define PREHEAT_1_LABEL       "PLA"
 #define PREHEAT_1_TEMP_HOTEND 210
-#define PREHEAT_1_TEMP_BED     0
+#define PREHEAT_1_TEMP_BED     5
 #define PREHEAT_1_FAN_SPEED    55 // Value from 0 to 255
 
 #define PREHEAT_2_LABEL       "ABS"
