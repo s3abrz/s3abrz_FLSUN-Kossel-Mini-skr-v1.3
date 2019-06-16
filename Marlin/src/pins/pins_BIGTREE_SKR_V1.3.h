@@ -153,7 +153,7 @@
 // Temperature Sensors
 //  3.3V max when defined as an analog input
 //
-#define TEMP_BED_PIN       0   // A0 (T0) - (67) - TEMP_BED_PIN
+//#define TEMP_BED_PIN       0   // A0 (T0) - (67) - TEMP_BED_PIN
 #define TEMP_0_PIN         2   // A1 (T1) - (68) - TEMP_0_PIN
 //#define TEMP_1_PIN         1   // A2 (T2) - (69) - TEMP_1_PIN
 
@@ -167,7 +167,7 @@
   #define HEATER_1_PIN     P2_04
 #endif
 #define FAN_PIN            P2_03
-//#define HEATER_BED_PIN     P2_05
+#define HEATER_BED_PIN     P2_05
 
 /*
 |               _____                                             _____
